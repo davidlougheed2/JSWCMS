@@ -5,7 +5,9 @@ and formats them. Currently it has limited features but I am working towards a c
 
 ###How to use:
 
-In your HTML file, in the <head></head> tags, put the following code:
+In your HTML file, in the
+	 <head></head>
+ tags, put the following code:
 
 	<script type="text/javascript" src="wcms.js"></script>
 	<script src="http://code.jquery.com/jquery-1.5.1.js " type="text/javascript"></script>
@@ -20,5 +22,6 @@ This is the text file format:
 
 - index.html loads content from index.txt
 - about.html loads content from about.txt
+- etc...
 
 All web pages load headers and footers from "header.txt" and "footer.txt" respectively.
