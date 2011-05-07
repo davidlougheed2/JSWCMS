@@ -6,8 +6,10 @@ and formats them. Currently it has limited features but I am working towards a c
 ###How to use:
 
 In your HTML file, in the
+
 	 <head></head>
- tags, put the following code:
+
+tags, put the following code:
 
 	<script type="text/javascript" src="wcms.js"></script>
 	<script src="http://code.jquery.com/jquery-1.5.1.js " type="text/javascript"></script>
