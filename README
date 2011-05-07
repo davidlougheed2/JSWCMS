@@ -6,7 +6,7 @@ How to use:
 In your HTML file, in the <head></head> tags, put the following code:
 
 <script type="text/javascript" src="wcms.js"></script>
-<script src="http://code.jquery.com/jquery-1.5.1.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.5.1.js " type="text/javascript"></script>
 
 and put the file "wcms.js" in your website directory. Then, name a div in your webpage "content" like this:
 
