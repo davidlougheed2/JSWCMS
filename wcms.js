@@ -1,6 +1,6 @@
 /*
 Website Content Management Script
-By David Lougheed.
+By David Lougheed. 2011.
 
 WARNING: THIS SCRIPT REQUIRES jQUERY 1.5.1 OR LATER
 */
