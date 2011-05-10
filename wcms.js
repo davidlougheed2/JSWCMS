@@ -18,6 +18,8 @@ var justyt = false;
 var tempdir = "./example.txt";
 var footdir = "./footer.txt";
 var headdir = "./header.txt";
+
+var urlstuff = new Array();
     
 //document.write(currloc);
 //document.write(textloc);
@@ -91,6 +93,7 @@ $.ajax({
         }
         else {
             location.reload(true);
+	    window.setTimeout('location.reload()', 10);
         }
     }
 });
@@ -110,6 +113,7 @@ $.ajax({
         }
         else {
             location.reload(true);
+	    window.setTimeout('location.reload()', 10);
         }
     }
 });
@@ -129,6 +133,7 @@ $.ajax({
         }
         else {
             location.reload(true);
+	    window.setTimeout('location.reload()', 10);
         }
     }
 });
