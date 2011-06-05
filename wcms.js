@@ -2,6 +2,7 @@ $(document).ready(function() {
 /*
 Website Content Management Script 0.3
 By David Lougheed.
+Thanks to Andrewanimation.biz for js help!
 
 WARNING: THIS SCRIPT REQUIRES jQUERY 1.5.1 OR LATER
 */
