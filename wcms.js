@@ -1,6 +1,6 @@
 $(document).ready(function() {
 /*
-Website Content Management Script
+Website Content Management Script 0.3
 By David Lougheed.
 
 WARNING: THIS SCRIPT REQUIRES jQUERY 1.5.1 OR LATER
