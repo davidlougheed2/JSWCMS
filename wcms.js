@@ -1,6 +1,7 @@
+$(document).ready(function() {
 /*
 Website Content Management Script
-By David Lougheed. 2011.
+By David Lougheed.
 
 WARNING: THIS SCRIPT REQUIRES jQUERY 1.5.1 OR LATER
 */
@@ -92,8 +93,7 @@ $.ajax({
             document.getElementById('content').innerHTML = data2;
         }
         else {
-            location.reload(true);
-	    window.setTimeout('location.reload()', 10);
+            $("#content").load('header.txt');
         }
     }
 });
@@ -112,6 +112,7 @@ $.ajax({
             document.getElementById('footer').innerHTML = data3;
         }
         else {
+		document.write("ah no");
             location.reload(true);
 	    window.setTimeout('location.reload()', 10);
         }
@@ -136,4 +137,6 @@ $.ajax({
 	    window.setTimeout('location.reload()', 10);
         }
     }
+});
+
 });
