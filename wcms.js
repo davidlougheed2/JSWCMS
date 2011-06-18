@@ -1,6 +1,6 @@
 $(document).ready(function() {
 /*
-Website Content Management Script 0.3
+Website Content Management Script 0.4
 By David Lougheed.
 Thanks to Andrewanimation.biz for js help!
 
@@ -20,13 +20,9 @@ var justyt = false;
 var tempdir = "./example.txt";
 var footdir = "./footer.txt";
 var headdir = "./header.txt";
+var navdir = "./nav.txt";
 
 var urlstuff = new Array();
-    
-//document.write(currloc);
-//document.write(textloc);
-
-//document.getElementById('content').innerHTML = "Error: this script requires jQuery.";
 
 if (typeof jQuery == 'undefined') {  
     alert("ERROR 01: WCMS requires jQuery.\nPlease contact the site owner\nor get jQuery from http://jquery.com/");
@@ -132,6 +128,31 @@ $.ajax({
             
             $("#header").html(data4);
             document.getElementById('header').innerHTML = data4;
+        }
+        else {
+            location.reload(true);
+	    window.setTimeout('location.reload()', 10);
+        }
+    }
+});
+
+$.ajax({
+
+    url : navdir,
+    success : function (data) {
+        if(data != "") {
+            var ss5 = data;
+            ss5 = ss5.replace(/{/g,"<div id=\"navelem\"><a href=");
+	    ss5 = ss5.replace(/[/g,"\"");
+	    ss5 = ss5.replace(/]/g,"\">");
+	    ss5 = ss5.replace(/}/g,"</a></div>");
+
+	    //nav: {[index.html]main page}
+            
+            var data5 = ss5;
+            
+            $("#nav").html(data5);
+            document.getElementById('nav').innerHTML = data5;
         }
         else {
             location.reload(true);
