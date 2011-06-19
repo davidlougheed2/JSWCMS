@@ -1,7 +1,9 @@
 .DS_Store
+.gitignore
 publish\ gitignore.command
 publish\ readme.command
 publish gitignore.command
 publish readme.command
 publish_mainfile.sh
 publish_mainfile.command
+publish_template.command
